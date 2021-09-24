@@ -5,7 +5,7 @@ const MONGO_URI = process.env.MONGO_URI;
   
 
 mongoose.connect(MONGO_URI, {
-  useNewUrlParser: trunInNewContext,
+  useNewUrlParser: true,
   useUnifiedTopology: true, 
   dbName: 'ToDoApp',
 })
@@ -21,12 +21,12 @@ const taskSchema = new Schema ({
   }, 
   dateCreated: {
     type: Date,
-    default: Date.now
+    default: Date.now,
     // required: true
   }, 
   dueDate: {
     type: Date, 
-    required: true
+    // required: true
   }
 });
 

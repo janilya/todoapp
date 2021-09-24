@@ -5,7 +5,7 @@
   "main": "./client/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon node server.js"
+    "start": "nodemon ./server/server.js"
   },
   "author": "JB, RW, JC, DC",
   "license": "ISC",
@@ -15,6 +15,7 @@
     "mongoose": "^6.0.7",
     "node-fetch": "^3.0.0",
     "nodemon": "^2.0.13",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "sass": "^1.42.1"
   }
 }
