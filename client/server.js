@@ -2,11 +2,11 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const PORT = 3000;
-const taskRouter = require('./routes/taskRouter')
+const taskRouter = require('../server/routes/taskRouter')
 //serve static files (html, css, assets)
 
 
-app.use(express.static(path.join(__dirname, '../client')));
+app.use(express.static(path.join(__dirname, './')));
 
 
 
