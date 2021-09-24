@@ -7,7 +7,7 @@ const MONGO_URI = process.env.MONGO_URI;
 mongoose.connect(MONGO_URI, {
   useNewUrlParser: trunInNewContext,
   useUnifiedTopology: true, 
-  dbName: 'ToDo',
+  dbName: 'ToDoApp',
 })
     .then(() => console.log('Connected to Mongo DB'))
     .catch(err => console.log(err));
